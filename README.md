@@ -39,3 +39,7 @@ if (!$conn) {
 
 
 <img width="954" height="320" alt="image" src="https://github.com/user-attachments/assets/4f6f806f-a5f2-48e8-bda1-2a9d4146f978" />
+
+# Menampilkan Data (Read) Index.php
+
+
