@@ -22,6 +22,22 @@ Langkah pertama mempersiapkan database server menggunakan MySQL. Pastikan MySQL 
 
 ## Membuat Database: Studi Kasus Data Barang dan Tabel
 
+```
+-- Membuat Database
+CREATE DATABASE latihan1;
+
+-- Membuat Tabel data_barang
+CREATE TABLE data_barang (
+    id_barang int(10) auto_increment Primary Key,
+    kategori varchar(30),
+    nama varchar(30),
+    gambar varchar(100),
+    harga_beli decimal(10,0),
+    harga_jual decimal(10,0),
+    stok int(4)
+);
+```
+
 ## Menambahkan Data Awal
 
 
