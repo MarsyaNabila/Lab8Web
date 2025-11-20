@@ -47,6 +47,7 @@ INSERT INTO data_barang (kategori, nama, gambar, harga_beli, harga_jual, stok)
  ('Elektronik', 'HP OPPO Android', 'hp_oppo.jpg', 1800000, 2300000, 5);
 ```
 
+## 📷 Hasil Screenshoot Tampilan Tabel `data_barang` phpMyAdmin
 
 
 
