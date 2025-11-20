@@ -84,6 +84,9 @@ if (!$conn) {
 
 <img width="954" height="320" alt="image" src="https://github.com/user-attachments/assets/4f6f806f-a5f2-48e8-bda1-2a9d4146f978" />
 
+Kode PHP tersebut digunakan untuk membuat koneksi antara script PHP dan database MySQL. Bagian pertama berisi empat variabel yang menyimpan informasi koneksi, yaitu alamat server (`localhost`), username MySQL (`root`), password yang masih kosong, serta nama database yang ingin diakses (`latihan1`). Setelah itu, fungsi `mysqli_connect()` dipakai untuk mencoba menyambungkan PHP ke MySQL menggunakan informasi tersebut. Hasil koneksi disimpan dalam variabel `$conn`. Kemudian dilakukan pengecekan: jika koneksi gagal, program menampilkan pesan "Koneksi ke server gagal." dan langsung menghentikan proses menggunakan `die()`. Namun jika koneksi berhasil dibuat, program menampilkan pesan "Koneksi berhasil!" sebagai tanda bahwa PHP sudah terhubung dengan database dengan benar.
+
+
 # Menampilkan Data (Read) Index.php
 
 
