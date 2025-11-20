@@ -89,6 +89,10 @@ Kode PHP tersebut digunakan untuk membuat koneksi antara script PHP dan database
 
 # Menampilkan Data Read (index.php)
 
-#
+# Menambah Data Create (tambah.php)
+
+# Mengubah Data Update (ubah.php)
+
+# Menghapus Data Delete (hapus.php)
 
 
