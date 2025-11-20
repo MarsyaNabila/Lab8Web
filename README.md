@@ -17,6 +17,17 @@ Matakuliah : Pemograman Web 1
 ## Deskripsi Program 
 Program ini dibuat untuk menampilkan, menambah, mengubah, dan menghapus data barang menggunakan PHP dan MySQL. Setiap data disimpan di database dan ditampilkan dalam bentuk tabel. File tambah, ubah, dan hapus digunakan untuk memproses perubahan data, sedangkan index.php menampilkan seluruh data yang ada. Program juga mendukung upload gambar untuk setiap barang.
 
+## Langkah - Langkah Pratikum
+Langkah pertama mempersiapkan database server menggunakan MySQL. Pastikan MySQL Server sudah dapat dijalankan melalui XAMPP.
+
+## Membuat Database: Studi Kasus Data Barang dan Tabel
+
+## Menambahkan Data Awal
+
+
+
+
+
 # Koneksi.php
 
 ```
