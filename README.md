@@ -16,3 +16,26 @@ Matakuliah : Pemograman Web 1
 
 ## Deskripsi Program 
 Program ini dibuat untuk menampilkan, menambah, mengubah, dan menghapus data barang menggunakan PHP dan MySQL. Setiap data disimpan di database dan ditampilkan dalam bentuk tabel. File tambah, ubah, dan hapus digunakan untuk memproses perubahan data, sedangkan index.php menampilkan seluruh data yang ada. Program juga mendukung upload gambar untuk setiap barang.
+
+# Koneksi.php
+
+```
+<?php
+$host = "localhost";
+$user = "root";
+$pass = "";
+$db   = "latihan1";
+
+$conn = mysqli_connect($host, $user, $pass, $db);
+
+if (!$conn) {
+    echo "Koneksi ke server gagal.";
+    die();
+} else {
+    echo "Koneksi berhasil!";
+}
+?>
+```
+
+
+<img width="954" height="320" alt="image" src="https://github.com/user-attachments/assets/4f6f806f-a5f2-48e8-bda1-2a9d4146f978" />
