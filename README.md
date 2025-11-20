@@ -20,7 +20,11 @@ Program ini dibuat untuk menampilkan, menambah, mengubah, dan menghapus data bar
 ## Langkah - Langkah Pratikum
 Langkah pertama mempersiapkan database server menggunakan MySQL. Pastikan MySQL Server sudah dapat dijalankan melalui XAMPP.
 
-## Membuat Database: Studi Kasus Data Barang dan Tabel
+## A. Membuat Database
+
+`CREAT DATABASE latihan1;`
+
+## B. Membuat Tabel
 
 ```sql
 -- Membuat Database
@@ -38,7 +42,7 @@ CREATE TABLE data_barang (
 );
 ```
 
-## Menambahkan Data Awal
+## C. Menambahkan Data Awal
 
 ```sql
 INSERT INTO data_barang (kategori, nama, gambar, harga_beli, harga_jual, stok)
