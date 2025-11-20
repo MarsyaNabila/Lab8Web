@@ -22,7 +22,7 @@ Langkah pertama mempersiapkan database server menggunakan MySQL. Pastikan MySQL 
 
 ## Membuat Database: Studi Kasus Data Barang dan Tabel
 
-```
+```sql
 -- Membuat Database
 CREATE DATABASE latihan1;
 
