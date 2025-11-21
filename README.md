@@ -56,7 +56,8 @@ INSERT INTO data_barang (kategori, nama, gambar, harga_beli, harga_jual, stok)
 
 ## 📷 Tampilan Tabel `data_barang` phpMyAdmin
 
-<img width="1156" height="720" alt="Screenshot 2025-11-20 202154" src="https://github.com/user-attachments/assets/f5e0acbe-1d3d-45ac-a16e-c659e069363d" />
+<img width="1252" height="635" alt="image" src="https://github.com/user-attachments/assets/122231f8-cdf0-42e4-90c9-7517cca92032" />
+
 
 
 
