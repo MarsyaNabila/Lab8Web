@@ -228,6 +228,10 @@ if (isset($_POST['submit'])) {
 </html>
 ```
 
+
+Kode tersebut digunakan untuk menambahkan data barang baru ke dalam database. Ketika tombol submit ditekan, data yang diisi di form seperti nama, kategori, harga beli, harga jual, dan stok diambil melalui `$_POST`. Jika pengguna mengupload gambar, nama file dan lokasi sementara gambar diambil dari `$_FILES`, lalu file gambar dipindahkan ke folder *gambar*. Setelah semua data siap, perintah `INSERT` dijalankan untuk menyimpan data baru ke tabel *data_barang* lengkap dengan gambar jika ada. Setelah proses penyimpanan selesai, halaman otomatis dialihkan kembali ke `index.php`. Bagian HTML berisi form yang digunakan untuk mengisi data barang, mulai dari nama, kategori, harga beli, harga jual, stok, hingga upload gambar. Form menggunakan `enctype="multipart/form-data"` agar file gambar bisa dikirim. Seluruh form berada dalam satu container agar tampil rapi di halaman web.
+
+
 <img width="956" height="565" alt="image" src="https://github.com/user-attachments/assets/5ec2d7dc-4311-4fcd-95aa-5aa08ee69c6b" />
 
 
@@ -317,6 +321,14 @@ if (isset($_POST['submit'])) {
 </html>
 ```
 
+
+Kode tersebut digunakan untuk mengubah data barang yang sudah ada di database. Pertama, program mengambil `id` dari URL menggunakan `$_GET['id']`, lalu melakukan query untuk menampilkan data barang yang akan diedit. Data yang ditemukan disimpan di variabel `$data` dan digunakan untuk mengisi nilai awal pada form agar pengguna bisa melihat data sebelumnya.
+
+Ketika tombol submit ditekan, nilai baru yang diisi di form seperti nama, kategori, harga beli, harga jual, dan stok diambil melalui `$_POST`. Untuk gambar, program mengecek apakah pengguna mengupload file baru. Jika ada gambar baru, file tersebut dipindahkan ke folder *gambar* dan nama file baru dipakai. Jika tidak ada gambar baru, gambar lama tetap digunakan.
+
+Setelah semua data siap, program menjalankan query `UPDATE` untuk memperbarui informasi barang berdasarkan id yang sedang diedit. Jika proses berhasil, halaman langsung diarahkan kembali ke `index.php`. Bagian HTML hanya berisi form edit yang otomatis terisi dengan data lama sehingga pengguna tinggal mengganti bagian yang ingin diperbarui. Form juga mendukung upload gambar dengan `enctype="multipart/form-data"`.
+
+
 <img width="948" height="562" alt="image" src="https://github.com/user-attachments/assets/bb18f982-695e-4c8b-b647-08401be84796" />
 
 
@@ -333,6 +345,9 @@ mysqli_query($conn, "DELETE FROM data_barang WHERE id_barang='$id'");
 header("Location: index.php");
 ?>
 ```
+
+Kode ini digunakan untuk menghapus data barang dari database. Program mengambil nilai `id` dari URL menggunakan `$_GET['id']`, kemudian menjalankan perintah `DELETE` untuk menghapus baris yang memiliki `id_barang` sesuai dengan id tersebut. Setelah proses penghapusan selesai, halaman langsung diarahkan kembali ke `index.php` agar pengguna bisa melihat daftar barang yang sudah diperbarui.
+
 
 <img width="955" height="793" alt="image" src="https://github.com/user-attachments/assets/a2144c9a-b9fb-4051-95d5-9769840b41ae" />
 
