@@ -18,7 +18,15 @@ Matakuliah : Pemograman Web 1
 Program ini dibuat untuk menampilkan, menambah, mengubah, dan menghapus data barang menggunakan PHP dan MySQL. Setiap data disimpan di database dan ditampilkan dalam bentuk tabel. File tambah, ubah, dan hapus digunakan untuk memproses perubahan data, sedangkan index.php menampilkan seluruh data yang ada. Program juga mendukung upload gambar untuk setiap barang.
 
 ## Struktur Direktori
-lab8_php_database/ ├── index.php -> Halaman utama (Read - Daftar Barang) ├── tambah.php -> Form tambah barang baru (Create) ├── ubah.php -> Form ubah data barang (Update) ├── hapus.php -> Proses hapus barang (Delete) ├── koneksi.php -> Koneksi ke database MySQL ├── style.css -> Styling tampilan ├── gambar/ -> Folder penyimpanan gambar barang yang di-upload └── db_latihan1.sql -> Script SQL database + tabel + data awal
+lab8_php_database/
+├── index.php           -> Halaman utama (Read - Daftar Barang)
+├── tambah.php          -> Form tambah barang baru (Create)
+├── ubah.php            -> Form ubah data barang (Update)
+├── hapus.php           -> Proses hapus barang (Delete)
+├── koneksi.php         -> Koneksi ke database MySQL
+├── style.css           -> Styling tampilan
+├── gambar/             -> Folder penyimpanan gambar barang yang di-upload
+└── db_latihan1.sql     -> Script SQL database + tabel + data awal
 
 ## Langkah - Langkah Pratikum
 Langkah pertama mempersiapkan database server menggunakan MySQL. Pastikan MySQL Server sudah dapat dijalankan melalui XAMPP.
