@@ -63,7 +63,7 @@ INSERT INTO data_barang (kategori, nama, gambar, harga_beli, harga_jual, stok)
 
 # Koneksi Database (koneksi.php)
 
-```sql
+```php
 <?php
 $host = "localhost";
 $user = "root";
@@ -91,7 +91,7 @@ Kode PHP tersebut digunakan untuk membuat koneksi antara script PHP dan database
 
 # Menampilkan Data Read (index.php)
 
-```sql
+```php
 <?php 
 include 'koneksi.php';
 
@@ -156,7 +156,7 @@ $result = mysqli_query($conn, $sql);
 
 # Menambah Data Create (tambah.php)
 
-```sql
+```php
 <?php
 include 'koneksi.php';
 
@@ -229,7 +229,7 @@ if (isset($_POST['submit'])) {
 
 # Mengubah Data Update (ubah.php)
 
-```sql
+```php
 <?php
 include 'koneksi.php';
 
@@ -319,7 +319,7 @@ if (isset($_POST['submit'])) {
 
 # Menghapus Data Delete (hapus.php)
 
-```sql
+```php
 <?php
 include 'koneksi.php';
 
