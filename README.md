@@ -151,6 +151,10 @@ $result = mysqli_query($conn, $sql);
 </html>
 ```
 
+
+Kode tersebut mulai dengan memanggil file *koneksi.php* agar halaman bisa terhubung ke database. Setelah itu dibuat query `SELECT * FROM data_barang` untuk mengambil semua data barang, lalu hasilnya disimpan dalam `$result`. Selanjutnya halaman HTML ditampilkan berisi judul dan tombol untuk menambah data baru. Di bagian tabel, script melakukan perulangan `while` untuk menampilkan setiap baris data dari database. Jika barang memiliki gambar, gambar tersebut ditampilkan dari folder *gambar*, dan jika tidak ada maka hanya ditampilkan tanda "-". Data lain seperti nama, kategori, harga beli, harga jual, dan stok ditampilkan apa adanya. Pada kolom aksi tersedia link "Ubah" untuk mengedit data dan "Hapus" untuk menghapus data, lengkap dengan konfirmasi agar tidak salah hapus. Seluruh proses ini membuat halaman bisa menampilkan daftar barang secara otomatis berdasarkan isi database.
+
+
 <img width="956" height="874" alt="image" src="https://github.com/user-attachments/assets/232ffb36-3c16-49e8-b476-ec1c5f8f170e" />
 
 
