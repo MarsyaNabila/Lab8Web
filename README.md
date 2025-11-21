@@ -54,7 +54,7 @@ INSERT INTO data_barang (kategori, nama, gambar, harga_beli, harga_jual, stok)
  ('Elektronik', 'HP OPPO Android', 'hp_oppo.jpg', 1800000, 2300000, 5);
 ```
 
-## 📷 Hasil Screenshoot Tampilan Tabel `data_barang` phpMyAdmin
+## 📷 Tampilan Tabel `data_barang` phpMyAdmin
 
 <img width="1156" height="720" alt="Screenshot 2025-11-20 202154" src="https://github.com/user-attachments/assets/f5e0acbe-1d3d-45ac-a16e-c659e069363d" />
 
@@ -63,7 +63,7 @@ INSERT INTO data_barang (kategori, nama, gambar, harga_beli, harga_jual, stok)
 
 # Koneksi Database (koneksi.php)
 
-```
+```sql
 <?php
 $host = "localhost";
 $user = "root";
@@ -81,10 +81,12 @@ if (!$conn) {
 ?>
 ```
 
+Kode PHP tersebut digunakan untuk membuat koneksi antara script PHP dan database MySQL. Bagian pertama berisi empat variabel yang menyimpan informasi koneksi, yaitu alamat server (`localhost`), username MySQL (`root`), password yang masih kosong, serta nama database yang ingin diakses (`latihan1`). Setelah itu, fungsi `mysqli_connect()` dipakai untuk mencoba menyambungkan PHP ke MySQL menggunakan informasi tersebut. Hasil koneksi disimpan dalam variabel `$conn`. Kemudian dilakukan pengecekan: jika koneksi gagal, program menampilkan pesan "Koneksi ke server gagal." dan langsung menghentikan proses menggunakan `die()`. Namun jika koneksi berhasil dibuat, program menampilkan pesan "Koneksi berhasil!" sebagai tanda bahwa PHP sudah terhubung dengan database dengan benar.
+
 
 <img width="954" height="320" alt="image" src="https://github.com/user-attachments/assets/4f6f806f-a5f2-48e8-bda1-2a9d4146f978" />
 
-Kode PHP tersebut digunakan untuk membuat koneksi antara script PHP dan database MySQL. Bagian pertama berisi empat variabel yang menyimpan informasi koneksi, yaitu alamat server (`localhost`), username MySQL (`root`), password yang masih kosong, serta nama database yang ingin diakses (`latihan1`). Setelah itu, fungsi `mysqli_connect()` dipakai untuk mencoba menyambungkan PHP ke MySQL menggunakan informasi tersebut. Hasil koneksi disimpan dalam variabel `$conn`. Kemudian dilakukan pengecekan: jika koneksi gagal, program menampilkan pesan "Koneksi ke server gagal." dan langsung menghentikan proses menggunakan `die()`. Namun jika koneksi berhasil dibuat, program menampilkan pesan "Koneksi berhasil!" sebagai tanda bahwa PHP sudah terhubung dengan database dengan benar.
+
 
 
 # Menampilkan Data Read (index.php)
