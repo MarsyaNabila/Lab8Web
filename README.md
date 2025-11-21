@@ -164,7 +164,8 @@ $result = mysqli_query($conn, $sql);
 Kode tersebut mulai dengan memanggil file *koneksi.php* agar halaman bisa terhubung ke database. Setelah itu dibuat query `SELECT * FROM data_barang` untuk mengambil semua data barang, lalu hasilnya disimpan dalam `$result`. Selanjutnya halaman HTML ditampilkan berisi judul dan tombol untuk menambah data baru. Di bagian tabel, script melakukan perulangan `while` untuk menampilkan setiap baris data dari database. Jika barang memiliki gambar, gambar tersebut ditampilkan dari folder *gambar*, dan jika tidak ada maka hanya ditampilkan tanda "-". Data lain seperti nama, kategori, harga beli, harga jual, dan stok ditampilkan apa adanya. Pada kolom aksi tersedia link "Ubah" untuk mengedit data dan "Hapus" untuk menghapus data, lengkap dengan konfirmasi agar tidak salah hapus. Seluruh proses ini membuat halaman bisa menampilkan daftar barang secara otomatis berdasarkan isi database.
 
 
-<img width="956" height="874" alt="image" src="https://github.com/user-attachments/assets/232ffb36-3c16-49e8-b476-ec1c5f8f170e" />
+<img width="950" height="1079" alt="Screenshot 2025-11-21 213019" src="https://github.com/user-attachments/assets/7dd6f5e0-5874-4997-b635-46a85f38b163" />
+
 
 
 # Menambah Data Create (tambah.php)
@@ -241,7 +242,9 @@ if (isset($_POST['submit'])) {
 Kode tersebut digunakan untuk menambahkan data barang baru ke dalam database. Ketika tombol submit ditekan, data yang diisi di form seperti nama, kategori, harga beli, harga jual, dan stok diambil melalui `$_POST`. Jika pengguna mengupload gambar, nama file dan lokasi sementara gambar diambil dari `$_FILES`, lalu file gambar dipindahkan ke folder *gambar*. Setelah semua data siap, perintah `INSERT` dijalankan untuk menyimpan data baru ke tabel *data_barang* lengkap dengan gambar jika ada. Setelah proses penyimpanan selesai, halaman otomatis dialihkan kembali ke `index.php`. Bagian HTML berisi form yang digunakan untuk mengisi data barang, mulai dari nama, kategori, harga beli, harga jual, stok, hingga upload gambar. Form menggunakan `enctype="multipart/form-data"` agar file gambar bisa dikirim. Seluruh form berada dalam satu container agar tampil rapi di halaman web.
 
 
-<img width="956" height="565" alt="image" src="https://github.com/user-attachments/assets/5ec2d7dc-4311-4fcd-95aa-5aa08ee69c6b" />
+
+<img width="954" height="1079" alt="Screenshot 2025-11-21 212954" src="https://github.com/user-attachments/assets/8dd98efd-cb4b-4e68-8cee-58693aad3d99" />
+
 
 
 # Mengubah Data Update (ubah.php)
@@ -338,7 +341,9 @@ Ketika tombol submit ditekan, nilai baru yang diisi di form seperti nama, katego
 Setelah semua data siap, program menjalankan query `UPDATE` untuk memperbarui informasi barang berdasarkan id yang sedang diedit. Jika proses berhasil, halaman langsung diarahkan kembali ke `index.php`. Bagian HTML hanya berisi form edit yang otomatis terisi dengan data lama sehingga pengguna tinggal mengganti bagian yang ingin diperbarui. Form juga mendukung upload gambar dengan `enctype="multipart/form-data"`.
 
 
-<img width="948" height="562" alt="image" src="https://github.com/user-attachments/assets/bb18f982-695e-4c8b-b647-08401be84796" />
+
+<img width="950" height="1079" alt="Screenshot 2025-11-21 213032" src="https://github.com/user-attachments/assets/8e0ba0fa-0674-4904-8eb2-f8f2b9d55e29" />
+
 
 
 
@@ -358,8 +363,7 @@ header("Location: index.php");
 Kode ini digunakan untuk menghapus data barang dari database. Program mengambil nilai `id` dari URL menggunakan `$_GET['id']`, kemudian menjalankan perintah `DELETE` untuk menghapus baris yang memiliki `id_barang` sesuai dengan id tersebut. Setelah proses penghapusan selesai, halaman langsung diarahkan kembali ke `index.php` agar pengguna bisa melihat daftar barang yang sudah diperbarui.
 
 
-<img width="955" height="793" alt="image" src="https://github.com/user-attachments/assets/a2144c9a-b9fb-4051-95d5-9769840b41ae" />
 
-
+<img width="951" height="1079" alt="Screenshot 2025-11-21 213046" src="https://github.com/user-attachments/assets/37ca6f00-2726-4ee9-93b9-6ae13236c516" />
 
 
