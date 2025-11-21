@@ -1,0 +1,81 @@
+body {
+    font-family: Arial, sans-serif;
+    /* gradasi pink ke merah */
+    background: linear-gradient(135deg, #FFB6C1, #FF6F91, #FF2E63);
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 85%;
+    margin: 40px auto;
+    background: rgba(255, 240, 245, 0.8); /* white-pink transparan */
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(255, 50, 80, 0.3);
+    backdrop-filter: blur(6px);
+}
+
+h1 {
+    text-align: center;
+    color: #B3003C; /* merah tua elegan */
+    text-shadow: 0 0 6px rgba(255, 150, 180, 0.7);
+    letter-spacing: 1px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 15px;
+    background: linear-gradient(135deg, #FF6F91, #FF2E63);
+    color: white;
+    text-decoration: none;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    font-weight: bold;
+    transition: 0.2s;
+}
+
+.btn:hover {
+    background: linear-gradient(135deg, #FF2E63, #FF6F91);
+    transform: scale(1.05);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(5px);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+table th {
+    padding: 12px;
+    background: #FF2E63;
+    color: white;
+    font-weight: bold;
+}
+
+table td {
+    padding: 10px;
+    border: 1px solid #F8A1B1;
+    color: #B3003C;
+}
+
+.link {
+    color: #FF2E63;
+    font-weight: bold;
+}
+
+.link:hover {
+    text-decoration: underline;
+}
+
+.thumb {
+    width: 80px;
+    height: auto;
+    border-radius: 8px;
+    border: 2px solid #FF6F91;
+    box-shadow: 0 0 5px rgba(255, 90, 120, 0.4);
+}
